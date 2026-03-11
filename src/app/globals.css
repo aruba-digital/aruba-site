@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* Paleta Aruba (inspirada en la bandera) */
+/* Azul Aruba, amarillo bandas, rojo estrella, blanco borde */
+:root {
+  --aruba-blue: #00a6d6;
+  --aruba-blue-deep: #0079a5;
+  --aruba-yellow: #f9d616;
+  --aruba-red: #ef3340;
+  --aruba-white: #f9fafb;
+
+  /* Tema claro por defecto */
+  --background: #f3f4f6;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-soft: #e5f4fb;
+  --accent: var(--aruba-blue);
+  --accent-soft: rgba(0, 166, 214, 0.08);
+  --accent-strong: var(--aruba-blue-deep);
+  --border-subtle: rgba(148, 163, 184, 0.4);
+}
+
+/* Tema oscuro explícito */
+:root[data-theme="dark"] {
+  --background: #020617;
+  --foreground: #e5e7eb;
+  --surface: #020617;
+  --surface-soft: #0b1120;
+  --accent: var(--aruba-yellow);
+  --accent-soft: rgba(249, 214, 22, 0.12);
+  --accent-strong: #facc15;
+  --border-subtle: rgba(148, 163, 184, 0.35);
+}
+
+/* Tema claro explícito (por si queremos forzar) */
+:root[data-theme="light"] {
+  --background: #f3f4f6;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-soft: #e5f4fb;
+  --accent: var(--aruba-blue);
+  --accent-soft: rgba(0, 166, 214, 0.08);
+  --accent-strong: var(--aruba-blue-deep);
+  --border-subtle: rgba(148, 163, 184, 0.4);
+}
+
+/* Respaldo: respeta prefers-color-scheme si no hay data-theme */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #020617;
+    --foreground: #e5e7eb;
+    --surface: #020617;
+    --surface-soft: #0b1120;
+    --accent: var(--aruba-yellow);
+    --accent-soft: rgba(249, 214, 22, 0.12);
+    --accent-strong: #facc15;
+    --border-subtle: rgba(148, 163, 184, 0.35);
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-strong: var(--accent-strong);
+  --color-border-subtle: var(--border-subtle);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
