@@ -1,6 +1,16 @@
 import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Aruba Digital",
+    url: "https://aruba.digital",
+    description:
+      "Estudio de tecnología que diseña y construye marcas, productos digitales, tiendas online y sistemas a medida.",
+    logo: "https://aruba.digital/icon.png",
+  };
+
   return (
     <div className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
       <header className="sticky top-0 z-20 border-b border-[color:var(--border-subtle)] bg-[color:var(--surface)]/85 backdrop-blur">
@@ -60,10 +70,10 @@ export default function Home() {
               experimentos digitales.
             </h1>
             <p className="mt-4 max-w-xl text-sm text-zinc-600 dark:text-zinc-300">
-              Aruba Digital es el espacio donde viven tus marcas activas, como
-              Florería Violeta, productos como{" "}
+              Aruba Digital es un estudio donde conviven tus marcas activas, como
+              Florería Violeta, productos propios como{" "}
               <span className="font-semibold">Luna Finanzas Digitales</span> y
-              proyectos que exploran nuevas fuentes de ingreso.
+              proyectos para clientes que exploran nuevas fuentes de ingreso.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -157,7 +167,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="rounded-xl border border-[color:var(--border-subtle)] bg-[color:var(--surface)] p-4">
-              <h3 className="text-sm font-semibold">Productos digitales</h3>
+              <h3 className="text-sm font-semibold">Productos digitales propios</h3>
               <p className="mt-2 text-xs text-zinc-600 dark:text-zinc-300">
                 Desarrollo de productos propios como Luna Finanzas Digitales:
                 backend, web y futuras apps móviles.
