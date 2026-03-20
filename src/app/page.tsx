@@ -119,7 +119,7 @@ export default function Home() {
                 icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
               }
             ].map((srv, i) => (
-              <motion.div key={i} variants={fadeUp} className="group flex flex-col p-8 border-l border-[color:var(--border-subtle)] hover:bg-[color:var(--aruba-sand)] transition-colors duration-500">
+              <motion.div key={i} variants={fadeUp} className="group flex flex-col p-8 border-l border-[color:var(--border-subtle)] hover:bg-[color:var(--aruba-sand)] hover:text-zinc-900 transition-colors duration-500">
                 <div className="h-12 w-12 flex items-center justify-center rounded-full border border-[color:var(--border-subtle)] bg-[color:var(--surface-soft)] text-[color:var(--foreground)] mb-6 transition-colors duration-500 group-hover:bg-[color:var(--background)] group-hover:border-[color:var(--foreground)]">
                   {srv.icon}
                 </div>
@@ -164,12 +164,12 @@ export default function Home() {
       </main>
 
       {/* CTA & FOOTER - Seamless Editorial Layout */}
-      <div className="mt-32 w-full bg-[color:var(--aruba-sand)] text-[color:var(--foreground)] border-t border-[color:var(--border-subtle)]">
+      <div className="mt-32 w-full bg-[color:var(--aruba-sand)] text-zinc-900 border-t border-black/5">
         <div className="mx-auto max-w-6xl px-6 pt-32 pb-12">
           
           <motion.section 
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
-            id="contacto" className="flex flex-col md:flex-row md:items-end justify-between border-b border-[color:var(--foreground)]/10 dark:border-white/10 pb-24"
+            id="contacto" className="flex flex-col md:flex-row md:items-end justify-between border-b border-black/10 pb-24"
           >
             <div className="max-w-2xl">
               <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.05]">Inicia tu<br />proyecto hoy.</h2>
@@ -179,7 +179,7 @@ export default function Home() {
             <div className="mt-12 md:mt-0 flex-shrink-0 relative">
               <a
                 href="mailto:contacto@arubadigital.cl"
-                className="inline-flex h-14 items-center justify-center gap-2 rounded-full border border-[color:var(--foreground)] bg-[color:var(--foreground)] px-10 text-[15px] font-bold text-[color:var(--background)] hover:bg-transparent hover:text-[color:var(--foreground)] transition-colors duration-500"
+                className="inline-flex h-14 items-center justify-center gap-2 rounded-full border border-zinc-900 bg-zinc-900 px-10 text-[15px] font-bold text-white hover:bg-transparent hover:text-zinc-900 transition-colors duration-500"
               >
                 Contactar al estudio
               </a>
