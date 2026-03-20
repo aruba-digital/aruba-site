@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ArubaWebProvider } from "aruba-web-ds";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,9 +34,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxSnippet: -1,
-      maxImagePreview: "large",
-      maxVideoPreview: -1,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
     },
   },
 };
@@ -50,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ArubaWebProvider>{children}</ArubaWebProvider>
+        {children}
       </body>
     </html>
   );

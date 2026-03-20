@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["aruba-web-ds"],
+  transpilePackages: ["@chakra-ui/react", "@ark-ui/react"],
 };
 
 export default nextConfig;
