@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<title>Aruba Digital — Fofoti v7</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f0ede6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 60px 40px;
+  }
+  h1 { font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: #a09880; font-weight: 600; }
+  .row { display: flex; align-items: flex-start; gap: 28px; justify-content: center; flex-wrap: wrap; }
+  .card {
+    background: white; border-radius: 24px; padding: 36px 40px;
+    display: flex; flex-direction: column; align-items: center; gap: 24px;
+    box-shadow: 0 1px 24px rgba(0,0,0,0.06); min-width: 260px;
+  }
+  .card-dark { background: #0f0f0f; }
+  .card-sand { background: #ece7da; }
+  .label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #bbb; font-weight: 600; }
+  .card-dark .label { color: #444; }
+  .card-sand .label { color: #b0a898; }
+  .sizes { display: flex; align-items: flex-end; gap: 28px; }
+  .lockup { display: flex; align-items: center; gap: 10px; padding-top: 14px; border-top: 1px solid #f0f0f0; width: 100%; }
+  .card-dark .lockup { border-color: #1e1e1e; }
+  .card-sand .lockup { border-color: #d4cdc2; }
+  .brand { font-size: 15px; font-weight: 800; letter-spacing: -0.02em; color: #1c1c1e; line-height: 1; }
+  .sub { font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #aaa; margin-top: 3px; font-weight: 600; }
+  .card-dark .brand { color: white; }
+</style>
+</head>
+<body>
+
+<h1>Aruba Digital — Bonsai-style Divi-Divi icon</h1>
+
+<!--
+  Traced from bonsai reference image:
+  - Left arm sweeps far left and droops low (like the divi-divi blown by trade winds)
+  - S-curve trunk visible as negative space in canopy
+  - Upper-right secondary canopy
+  - Ground line at bottom, NO POT
+  - Single flat silhouette
+-->
+
+<div class="row">
+  <!-- LIGHT -->
+  <div class="card">
+    <span class="label">Light</span>
+    <div class="sizes">
+      <!-- 52px -->
+      <svg width="52" height="38" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <!-- Ground line -->
+        <line x1="0" y1="182" x2="260" y2="182" stroke="#1c1c1e" stroke-width="6" stroke-linecap="round"/>
+        <!-- Main tree silhouette: traced from bonsai reference, no pot -->
+        <path fill="#1c1c1e" d="
+          M 8,155
+          C 2,138 0,112 14,90
+          C 24,72 42,62 66,58
+          C 88,54 112,52 138,52
+          C 146,48 156,40 170,32
+          C 186,22 208,18 228,26
+          C 248,34 260,54 258,74
+          C 256,94 242,112 224,124
+          C 210,134 195,140 182,148
+          C 174,154 170,160 168,168
+          L 156,170
+          C 154,162 150,148 142,132
+          C 136,120 128,114 112,118
+          C 88,124 58,138 28,156
+          Z
+        "/>
+        <!-- White cutout to show trunk/branch separation (the S-curve gap) -->
+        <path fill="white" d="
+          M 150,100
+          C 158,84 168,68 176,56
+          C 168,54 160,60 150,74
+          C 142,86 138,100 142,112
+          Z
+        "/>
+      </svg>
+
+      <!-- 80px -->
+      <svg width="80" height="59" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="#1c1c1e" stroke-width="6" stroke-linecap="round"/>
+        <path fill="#1c1c1e" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="white" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+
+      <!-- 120px -->
+      <svg width="120" height="88" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="#1c1c1e" stroke-width="6" stroke-linecap="round"/>
+        <path fill="#1c1c1e" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="white" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+    </div>
+    <div class="lockup">
+      <svg width="34" height="25" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="#1c1c1e" stroke-width="6" stroke-linecap="round"/>
+        <path fill="#1c1c1e" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="white" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+      <div><div class="brand">Aruba Digital</div><div class="sub">Estudio de tecnología</div></div>
+    </div>
+  </div>
+
+  <!-- DARK -->
+  <div class="card card-dark">
+    <span class="label">Dark</span>
+    <div class="sizes">
+      <svg width="52" height="38" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="white" stroke-width="6" stroke-linecap="round"/>
+        <path fill="white" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="#0f0f0f" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+      <svg width="80" height="59" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="white" stroke-width="6" stroke-linecap="round"/>
+        <path fill="white" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="#0f0f0f" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+      <svg width="120" height="88" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="white" stroke-width="6" stroke-linecap="round"/>
+        <path fill="white" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="#0f0f0f" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+    </div>
+    <div class="lockup">
+      <svg width="34" height="25" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="white" stroke-width="6" stroke-linecap="round"/>
+        <path fill="white" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="#0f0f0f" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+      <div><div class="brand">Aruba Digital</div><div class="sub">Estudio de tecnología</div></div>
+    </div>
+  </div>
+
+  <!-- SAND -->
+  <div class="card card-sand">
+    <span class="label">Sand</span>
+    <div class="sizes">
+      <svg width="52" height="38" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="#1c1c1e" stroke-width="6" stroke-linecap="round"/>
+        <path fill="#1c1c1e" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="#ece7da" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+      <svg width="80" height="59" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="#1c1c1e" stroke-width="6" stroke-linecap="round"/>
+        <path fill="#1c1c1e" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="#ece7da" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+      <svg width="120" height="88" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="#1c1c1e" stroke-width="6" stroke-linecap="round"/>
+        <path fill="#1c1c1e" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="#ece7da" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+    </div>
+    <div class="lockup">
+      <svg width="34" height="25" viewBox="0 0 260 188" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="182" x2="260" y2="182" stroke="#1c1c1e" stroke-width="6" stroke-linecap="round"/>
+        <path fill="#1c1c1e" d="M 8,155 C 2,138 0,112 14,90 C 24,72 42,62 66,58 C 88,54 112,52 138,52 C 146,48 156,40 170,32 C 186,22 208,18 228,26 C 248,34 260,54 258,74 C 256,94 242,112 224,124 C 210,134 195,140 182,148 C 174,154 170,160 168,168 L 156,170 C 154,162 150,148 142,132 C 136,120 128,114 112,118 C 88,124 58,138 28,156 Z"/>
+        <path fill="#ece7da" d="M 150,100 C 158,84 168,68 176,56 C 168,54 160,60 150,74 C 142,86 138,100 142,112 Z"/>
+      </svg>
+      <div><div class="brand">Aruba Digital</div><div class="sub">Estudio de tecnología</div></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
